@@ -1,0 +1,26 @@
+{
+    "evil":         true
+,   "regexdash":    true
+,   "browser":      true
+,   "wsh":          true
+,   "trailing":     true
+,   "sub":          true
+,   "curly":        true
+,   "laxcomma":     true
+,   "laxbreak":     true
+,   "undef":        true
+,   "jquery":       true
+,   "globals":
+    {
+        "console":      false
+    ,   "Ti":           false
+    ,   "Titanium":     false
+    ,   "Alloy":        false
+    ,   "L":            false
+    ,   "exports":      false
+    ,   "define":       false
+    ,   "require":      false
+    ,   "module":       false
+    ,   "__dirname":    false
+    }
+}
