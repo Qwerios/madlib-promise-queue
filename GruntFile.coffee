@@ -18,12 +18,20 @@ module.exports = (grunt) ->
         files: ['src/**/*.coffee']
         tasks: ['coffee']
 
+    mochaTest:
+      test:
+        options:
+          reporter: 'spec'
+          require:  'coffee-script'
+        src: [ 'test/**/*.js', "test/**/*.coffee" ]
 
   # These plugins provide the necessary tasks
   #
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-mocha-test'
 
   # Default tasks
   #
   grunt.registerTask 'default', [ 'coffee' ]
+  grunt.registerTask 'test',    [ 'coffee', 'mochaTest' ]
