@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Qwerios/madlib-promise-throttle.git"
+    "url": "https://github.com/Qwerios/madlib-promise-queue.git"
   },
   "scripts": {
     "test": "command -v grunt >/dev/null 2>&1 && grunt test || { echo >&2 'Grunt is not installed'; }",
