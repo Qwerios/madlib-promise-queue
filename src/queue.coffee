@@ -32,7 +32,7 @@
         #   @return {Promise}   Will resolve when a slot if available in the queue
         #
         ###
-        ready: () =>
+        ready: () ->
             deferred = Q.defer()
 
             if running.length < limit
