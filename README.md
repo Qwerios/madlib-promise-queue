@@ -1,4 +1,8 @@
-# madlib-promise-queue [![Build Status](https://travis-ci.org/Qwerios/madlib-promise-queue.svg?branch=master)](https://travis-ci.org/Qwerios/madlib-promise-queue)
+# madlib-promise-queue
+[![Build Status](https://travis-ci.org/Qwerios/madlib-promise-queue.svg?branch=master)](https://travis-ci.org/Qwerios/madlib-promise-queue) [![NPM version](https://badge.fury.io/js/madlib-promise-queue.png)](http://badge.fury.io/js/madlib-promise-queue) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+[![Npm Downloads](https://nodei.co/npm/madlib-promise-queue.png?downloads=true&stars=true)](https://nodei.co/npm/madlib-promise-queue.png?downloads=true&stars=true)
+
 A general purpose queue'ing mechanism using promises
 
 
