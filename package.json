@@ -2,7 +2,7 @@
   "name": "madlib-promise-queue",
   "description": "A general purpose queue'ing mechanism using promises",
   "main": "lib/queue.js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": {
     "name": "Mark Doeswijk",
     "email": "mdoeswijk@gmail.com",
