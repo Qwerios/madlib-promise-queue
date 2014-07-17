@@ -77,6 +77,23 @@
                 next.resolve()
 
         ###*
+        #   Flushes the queue. Will reject any remaining promises
+        #
+        #   @function flush
+        #
+        #   @return None
+        #
+        ###
+        flush: () ->
+            while promise = queue.pop()
+                promise.reject( "flush" )
+
+            while promise = running.pop()
+                promise.reject( "flush" )
+
+            return
+
+        ###*
         #   Retrieves the amount of waiting items in the queue
         #
         #   @function waitingCount
