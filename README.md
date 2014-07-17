@@ -42,7 +42,7 @@ queueItem1.then( function()
     ...
     // Let the queue know we're done to free up a slot
     //
-    queue.ready()
+    queue.done()
     ...
 } ).done()
 
@@ -54,7 +54,7 @@ queueItem2.then( function()
     ...
     // Let the queue know we're done to free up a slot
     //
-    queue.ready()
+    queue.done()
     ...
 } ).done()
 ```
