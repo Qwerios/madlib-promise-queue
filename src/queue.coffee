@@ -17,9 +17,10 @@
     #   @module     queue
     #   @constructor
     #   @param  {Number}    limit   The amount of items allowed to be running
+    #   @param  {String}    type    The type of queue. One of: fifo (First in, first out), lifo (Last in, first out)
     #   @version    0.1
     ###
-    ( limit = 10 ) ->
+    ( limit = 10, type = "fifo" ) ->
         queue   = []
         running = []
         timer   = 0
@@ -64,7 +65,14 @@
             # Take the next item out of the queue
             #
             if queue.length > 0 and running.length < limit
-                next = queue.shift()
+                switch type
+                    when "lifo"
+                        next = queue.pop()
+                    else
+                        # First in, first out is the (backwards compatible) default
+                        #
+                        next = queue.shift()
+
                 running.push( next )
                 next.resolve()
 
