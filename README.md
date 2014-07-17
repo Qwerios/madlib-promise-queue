@@ -59,4 +59,10 @@ queueItem2.then( function()
     queue.done()
     ...
 } ).done()
+
+// If you want to flush the current queue content (both running and waiting)
+// you can call the flush method.
+// All queue promises will be rejected with "flush" as it's payload
+//
+queue.flush()
 ```
