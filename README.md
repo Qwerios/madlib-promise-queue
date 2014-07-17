@@ -31,8 +31,10 @@ $ npm install madlib-promise-queue --save
 var Queue = require( "madlib-promise-queue" )
 
 // Make a queue that can hold 1 item
+// Default queue type is fifo (first in, first out)
+// Alternate option is lifo (last in, first out)
 //
-var queue = new Queue( 1 )
+var queue = new Queue( 1, "fifo" )
 
 // Get a promise from the queue that will resolve when a slot is available
 //
