@@ -18,14 +18,14 @@
   },
   "devDependencies": {
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-coffee": "~0.12.0",
     "grunt": "~0.4.5",
-    "coffee-script": "~1.7.1",
-    "chai": "~1.9.1",
-    "grunt-mocha-test": "~0.11.0"
+    "coffee-script": "~1.8.0",
+    "chai": "~1.10.0",
+    "grunt-mocha-test": "~0.12.7"
   },
   "dependencies": {
-    "q": "~1.0.1"
+    "q": "~1.1.2"
   },
   "licenses": [
     {
